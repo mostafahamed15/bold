@@ -1,0 +1,33 @@
+.load {
+  text-align: center;
+}
+.load a {
+  font-size: 70px;
+  color: #000000;
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 2px solid red; */
+  /* animation: border .2s border; */
+}
+.load a::before {
+  transition: all ease-in-out 0.2s;
+  animation: border 2s forwards;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  width: 0;
+  height: 2px;
+}
+
+@keyframes border {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}

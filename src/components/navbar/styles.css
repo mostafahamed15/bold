@@ -1,0 +1,101 @@
+.navbar-collapse {
+ 
+  justify-content: end !important;
+}
+.nav-link {
+  color: #151515;
+  font-weight: 500;
+  font-size: 18px;
+  border-left: 2px solid  gainsboro;
+ margin-top: 0;
+}
+
+.nav-link:hover{
+   background-color: #e078781f;
+   color: #F43333;
+}
+
+.animat {
+  border: 1px solid gainsboro;
+ animation: height 1s 1 alternate;
+  -webkit-animation: height 2s 1 alternate;
+}
+@keyframes height {
+  0% {
+    height: 60px;
+  }
+  50% {
+    height: 400px;
+  }
+  100% {
+    height: 60px;
+  }
+}
+
+.loader {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  left: 0;
+
+  background-color: gainsboro;
+  animation: loader 2s 2s alternate;
+}
+@keyframes loader {
+  0% {
+    width: 0;
+    height: 0px;
+    background-color: gainsboro;
+  }
+  50% {
+    width: 100%;
+    height: 2px;
+    background-color: red;
+  }
+  100% {
+    width: 0;
+    height: 0px;
+    background-color: gainsboro;
+  }
+}
+
+.logo{
+ border: none;
+ 
+animation:borderAnimation 3s forwards ;
+}
+@keyframes borderAnimation {
+to{
+  padding: 40px ;
+margin-left: -20px;
+    border-right: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+  }
+}
+.logo svg {
+   position: absolute;
+  top: 50%;
+  width: 250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: logo 2s forwards;
+  -webkit-animation: logo 2s forwards;
+
+}
+
+@keyframes logo {
+  0% {
+    width: 200px;
+    left: 50%;
+  }
+  50%,
+  70% ,80%{
+    width: 50px;
+    left: 50%;
+  }
+  100% {
+    width: 20px;
+    left: 30px;
+  }
+}

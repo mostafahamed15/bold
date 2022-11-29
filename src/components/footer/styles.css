@@ -1,0 +1,41 @@
+.parant {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  gap: 0px;
+  height: 100%;
+}
+.item1,
+.item2,
+.item3,
+.item4 {
+  border-right: 1px solid gainsboro;
+}
+.item1 {
+  border-right: 1px solid gainsboro;
+
+  grid-column-start: 1;
+
+  grid-column-end: 3;
+}
+.item2 {
+  grid-column-start: 3;
+
+  grid-column-end: 6;
+}
+.item3 {
+  grid-column-start: 6;
+
+  grid-column-end: 7;
+}
+.item4 {
+  grid-column-start: 7;
+
+  grid-column-end: 8;
+}
+.item5 {
+  grid-column-start: 8;
+
+  grid-column-end: 9;
+}

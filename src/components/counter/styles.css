@@ -1,0 +1,24 @@
+.count {
+  animation: hide 1.5s forwards;
+  font-size: 90px;
+  color: #f43333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+@keyframes hide {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+   
+  }
+}
+.title h1 {
+  font-size: 90px;
+}
+.title p {
+  font-style: italic;
+}
